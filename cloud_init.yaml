@@ -1,0 +1,9 @@
+#cloud-config
+
+runcmd:
+  - sudo yum -y update
+  - sudo yum -y install epel-release
+  - sudo yum -y install -y yum-utils
+  - sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+  - sudo yum -y install terraform
+  - sudo yum -y install ansible
