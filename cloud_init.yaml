@@ -7,3 +7,4 @@ runcmd:
   - sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
   - sudo yum -y install terraform
   - sudo yum -y install ansible
+  - sudo yum -y install git
