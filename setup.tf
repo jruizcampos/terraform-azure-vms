@@ -3,16 +3,16 @@ locals {
   myjson = jsondecode(file("${path.module}/credentials.json"))
   
   init_master = <<CUSTOM_DATA
-	runcmd:
-	  - sudo yum -y update
-	  - sudo yum -y install epel-release
-	CUSTOM_DATA
+#!/bin/bash
+sudo yum -y install epel-release
+sudo yum -y update
+CUSTOM_DATA
   
   init_worker = <<CUSTOM_DATA
-	runcmd:
-	  - sudo yum -y update
-	  - sudo yum -y install epel-release
-	CUSTOM_DATA
+#!/bin/bash
+sudo yum -y install epel-release
+sudo yum -y update
+CUSTOM_DATA
 }
 
 # Provider a utilizar
