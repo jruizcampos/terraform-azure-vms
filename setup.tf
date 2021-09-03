@@ -6,12 +6,16 @@ locals {
 #!/bin/bash
 sudo yum -y install epel-release
 sudo yum -y update
+sudo yum -y install iproute
+sudo yum -y install iproute-tc
 CUSTOM_DATA
-  
+
   init_worker = <<CUSTOM_DATA
 #!/bin/bash
 sudo yum -y install epel-release
 sudo yum -y update
+sudo yum -y install iproute
+sudo yum -y install iproute-tc
 CUSTOM_DATA
 }
 
