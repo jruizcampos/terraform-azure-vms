@@ -1,9 +1,5 @@
 # Terraform-Azure-VMs
 
-**Tabla de Contenidos**
-
-[TOC]
-
 Proyecto Terraform para el despliegue automatizado de infraestructura Kubernetes en Microsoft Azure.
 
 ## Diagrama de red de la infraestructura a desplegar:
