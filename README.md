@@ -17,18 +17,18 @@ variable "location" {
 
 ##### Numero de máquinas virtuales por cada tipo #####
 variable "masters" {
-	type = list(string)
-	description = "vms master"
-	# Una vm master por defecto
-	default = ["master1"]
+  type = list(string)
+  description = "vms master"
+  # Una vm master por defecto
+  default = ["master1"]
 }
 
 variable "workers" {
-	type = list(string)
-	description = "vms workers"
-	# Personalizar el número de hosts workers por defecto
-	#default = ["worker1", "worker2", "worker3"]
-	default = ["worker1"]
+  type = list(string)
+  description = "vms workers"
+  # Personalizar el número de hosts workers por defecto
+  #default = ["worker1", "worker2", "worker3"]
+  default = ["worker1"]
 }
 
 ##### Características por cada tipo de máquina virtual #####
@@ -75,11 +75,11 @@ Es necesario crear un archivo credentials.json en la raíz del proyecto. Copie e
 
 ## Pasos para el Despliegue
 - Clonar el proyecto: `git clone https://github.com/jruizcampos/terraform-azure-vms.git`
-Ejecutar:
 - Editar los archivos setup.tf y credentials.json según lo indicado en la sección anterior.
 - Realizar el despliegue con Terraform:
 ```bash
 terraform init
 terraform apply
 ```
+**&copy; 2021 [John Ruiz Campos](https://johnruizcampos.com "John Ruiz Campos")**
 
